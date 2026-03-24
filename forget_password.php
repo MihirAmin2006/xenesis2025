@@ -36,13 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'patelaryan5636@gmail.com'; // Your Gmail Address
-            $mail->Password = 'your password';   // Your Gmail App Password
+            $mail->Username = 'Your Gmail Address'; 
+            $mail->Password = 'Your Gmail App Password';   
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             // Email settings
-            $mail->setFrom('patelaryan5636@gmail.com', 'Xenesis Support');
+            $mail->setFrom('Your Gmail Address', 'Xenesis Support');
             $mail->addAddress($email);
             $mail->Subject = "🔑 Reset Your Password - Xenesis Event";
 
